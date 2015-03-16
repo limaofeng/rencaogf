@@ -11,7 +11,7 @@
     <properties>
         <argLine>-Dfile.encoding=UTF-8</argLine>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <com.fantasy-version>3.0.6.Alphal</com.fantasy-version>
+        <com.fantasy-version>3.0.7.Alphal</com.fantasy-version>
         <servlet.api-version>2.5</servlet.api-version>
         <junit-version>4.9</junit-version>
         <javax.servlet-api-version>3.1.0</javax.servlet-api-version>
