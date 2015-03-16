@@ -64,3 +64,4 @@ crashlytics-build.properties
 
 web-server/WebContent/WEB-INF/index
 web-client/node_modules
+target
