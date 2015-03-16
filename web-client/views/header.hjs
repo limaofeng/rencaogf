@@ -1,0 +1,39 @@
+<div class="header">
+    <div class="ie_maiDiv">
+        <h1 class="logo" title="logo"> </h1>
+        <ul class="nav">
+            <li class="">
+                <a class="active" href="/">
+                    网站首页
+                </a>
+            </li>
+            <li class="">
+                <a href="javascript:;">
+                    关于我们
+                </a>
+            </li>
+            <li class="">
+                <a href="javascript:;">
+                    设计团队
+                </a>
+            </li>
+
+            <li class="">
+                <a href="javascript:;">
+                    案例展示
+                </a>
+            </li>
+            <li class="">
+                <a href="javascript:;">
+                    楼盘设计方案
+                </a>
+            </li>
+            <li class="">
+                <a href="javascript:;">
+                    联系我们
+                </a>
+            </li>
+        </ul>
+        <div class="clear"> </div>
+    </div>
+</div>
