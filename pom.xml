@@ -19,6 +19,14 @@
         <clover.licenseLocation>/Users/lmf/framework/clover.license</clover.licenseLocation>
     </properties>
 
+    <repositories>
+        <repository>
+            <id>central</id>
+            <name>jfantasy maven central</name>
+            <url>http://maven.jfantasy.org/content/groups/public/</url>
+        </repository>
+    </repositories>
+
     <distributionManagement>
         <repository>
             <id>nexus-releases</id>
