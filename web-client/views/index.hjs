@@ -2,7 +2,7 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title>家居</title>
+    <title>绿色喜墅</title>
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0"/>
     <meta name="keywords" content="关键词，tapas"/>
     <meta name="description" content="摘要，tapas"/>
@@ -49,7 +49,7 @@
     <p class="in_about">公司所有设计师均有3年以上工作经历，资质深厚。 17年风雨历程，不仅造就了一代艰苦创业 、成就辉煌</p>
     <ul class="in_coll_list">
         <li>
-            <a href="javascript:;">
+            <a href="/collection">
                 <i class="in_coll_pic1"> </i>
                 <span>家装案例</span>
             </a>
@@ -84,7 +84,7 @@
         <p class="in_about">用现代的眼光看待传统的魅力，营造设计之魂</p>
         <ul class="design_intro">
             <li>
-                <a href="design.html">
+                <a href="/design">
                     <i class="design_intro_pic"><img src="../images/img.png" width="150" height="150" alt=""/></i>
                 </a>
                 <span class="design_intro_pic_txt">
@@ -94,7 +94,7 @@
                 </span>
             </li>
             <li>
-                <a href="javascript:;">
+                <a href="/design">
                     <i class="design_intro_pic"><img src="../images/img.png" width="150" height="150" alt=""/></i>
                 </a>
                 <span class="design_intro_pic_txt">
@@ -226,6 +226,6 @@
 </div>
 <!--content end-->
 
-
+{{>footer}}
 </body>
 </html>
