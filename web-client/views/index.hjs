@@ -38,13 +38,13 @@
 
 <div class="ie_maiDiv mai_content">
     <h2 class="in_title">
-            <span class="icon-ye">
+        <span class="icon-ye">
 
-            </span>
+        </span>
         案例展示
-            <span class="icon-ye2">
+        <span class="icon-ye2">
 
-            </span>
+        </span>
     </h2>
     <p class="in_about">公司所有设计师均有3年以上工作经历，资质深厚。 17年风雨历程，不仅造就了一代艰苦创业 、成就辉煌</p>
     <ul class="in_coll_list">
@@ -84,44 +84,44 @@
         <p class="in_about">用现代的眼光看待传统的魅力，营造设计之魂</p>
         <ul class="design_intro">
             <li>
-                <a href="javascript:;">
-                    <div class="design_intro_pic"><img src="images/img.png" width="150" height="150" alt=""/></div>
+                <a href="design.html">
+                    <i class="design_intro_pic"><img src="../images/img.png" width="150" height="150" alt=""/></i>
                 </a>
-                <div class="design_intro_pic_txt">
+                <span class="design_intro_pic_txt">
                     <p>张萌</p>
                     <p class="col666">主任设计师</p>
                     <p class="col666">工作年限：4年</p>
-                </div>
+                </span>
             </li>
             <li>
                 <a href="javascript:;">
-                    <div class="design_intro_pic"><img src="images/img.png" width="150" height="150" alt=""/></div>
+                    <i class="design_intro_pic"><img src="../images/img.png" width="150" height="150" alt=""/></i>
                 </a>
-                <div class="design_intro_pic_txt">
+                <span class="design_intro_pic_txt">
                     <p>张萌</p>
                     <p class="col666">主任设计师</p>
                     <p class="col666">工作年限：4年</p>
-                </div>
+                </span>
             </li>
             <li>
                 <a href="javascript:;">
-                    <div class="design_intro_pic"><img src="images/img.png" width="150" height="150" alt=""/></div>
+                    <i class="design_intro_pic"><img src="../images/img.png" width="150" height="150" alt=""/></i>
                 </a>
-                <div class="design_intro_pic_txt">
+                <span class="design_intro_pic_txt">
                     <p>张萌</p>
                     <p class="col666">主任设计师</p>
                     <p class="col666">工作年限：4年</p>
-                </div>
+                </span>
             </li>
             <li>
                 <a href="javascript:;">
-                    <div class="design_intro_pic"><img src="images/img.png" width="150" height="150" alt=""/></div>
+                    <i class="design_intro_pic"><img src="../images/img.png" width="150" height="150" alt=""/></i>
                 </a>
-                <div class="design_intro_pic_txt">
+                <span class="design_intro_pic_txt">
                     <p>张萌</p>
                     <p class="col666">主任设计师</p>
                     <p class="col666">工作年限：4年</p>
-                </div>
+                </span>
             </li>
         </ul>
         <div class="clear"> </div>

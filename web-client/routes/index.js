@@ -5,28 +5,21 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function (req, res) {
-    /*
-    var options = {
-        hostname: '127.0.0.1',
-        port: 10086,
-        path: '/pay/pay_callback',
-        method: 'GET'
-    };
-    var req = http.request(options, function (res) {
-        console.log('STATUS: ' + res.statusCode);
-        console.log('HEADERS: ' + JSON.stringify(res.headers));
-        //res.setEncoding('utf8');
-        res.on('data', function (chunk) {
-            console.log('BODY: ' + chunk);
-            res.render('index', {title: '康健 - 第一个NodeJS项目', paths: []});
-        });
-    });
-    req.on('error', function (e) {
-        console.log('problem with request: ' + e.message);
-    });
-    req.end();
-    */
-    res.render('index',{partials: {header:'header',footer:'footer'}});
+    res.render('index',{menus:{index:true},partials: {header:'header',footer:'footer'}});
+});
+
+router.get('/collection', function (req, res) {
+    res.render('index',{menus:{collection:true},partials: {header:'header',footer:'footer'}});
+});
+router.get('/collection_detail', function (req, res) {
+    res.render('index',{menus:{collection_detail:true},partials: {header:'header',footer:'footer'}});
+});
+
+router.get('/design', function (req, res) {
+    res.render('index',{menus:{design:true},partials: {header:'header',footer:'footer'}});
+});
+router.get('/design_detail', function (req, res) {
+    res.render('index',{menus:{design_detail:true},partials: {header:'header',footer:'footer'}});
 });
 
 module.exports = router;
