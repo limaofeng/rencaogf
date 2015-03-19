@@ -83,14 +83,14 @@
                 <p class="in_about">公司所有设计师均有20年以上工作经历，资质深厚。 17年风雨历程，不仅造就了一代艰苦创业 、成就辉煌</p>
 
                 <ul class="coll_tab">
-                    <li class="active">
-                        <a href="/cases/1">家装案例</a>
+                    <li {{#type_1}}class="active"{{/type_1}}>
+                        <a href="/cases?type=1">家装案例</a>
                     </li>
-                    <li class="">
-                        <a href="javascript:;">工装案例</a>
+                    <li {{#type_2}}class="active"{{/type_2}}>
+                        <a href="/cases?type=2">工装案例</a>
                     </li>
-                    <li class="">
-                        <a href="javascript:;">商业案例</a>
+                    <li {{#type_3}}class="active"{{/type_3}}>
+                        <a href="/cases?type=3">商业案例</a>
                     </li>
                 </ul>
 
