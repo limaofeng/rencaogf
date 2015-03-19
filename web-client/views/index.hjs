@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0"/>
     <meta name="keywords" content="关键词，tapas"/>
     <meta name="description" content="摘要，tapas"/>
-    <script src="js/jquery-1.8.3.min.js"></script>
-    <script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js"></script>
-    <link href="css/css.css" type="text/css" rel="stylesheet">
-    <link href="css/keyframes.css" type="text/css" rel="stylesheet">
+    <script src="/js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.SuperSlide.2.1.1.js"></script>
+    <link href="/css/css.css" type="text/css" rel="stylesheet">
+    <link href="/css/keyframes.css" type="text/css" rel="stylesheet">
     <script type="text/javascript">
         $(document).ready(function(){
             $(".prev,.next").hover(function(){
@@ -84,7 +84,7 @@
         <p class="in_about">用现代的眼光看待传统的魅力，营造设计之魂</p>
         <ul class="design_intro">
             <li>
-                <a href="/design">
+                <a href="/designers/1">
                     <i class="design_intro_pic"><img src="../images/img.png" width="150" height="150" alt=""/></i>
                 </a>
                 <span class="design_intro_pic_txt">
@@ -94,7 +94,7 @@
                 </span>
             </li>
             <li>
-                <a href="/design">
+                <a href="/designers/1">
                     <i class="design_intro_pic"><img src="../images/img.png" width="150" height="150" alt=""/></i>
                 </a>
                 <span class="design_intro_pic_txt">
@@ -211,7 +211,7 @@
 <div class="in_contact_content">
     <div class="ie_maiDiv">
         <div class="in_con_con_block">
-            <i class="twowm"><img src="images/twowm.png" width="230" height="230"/></i>
+            <i class="twowm"><img src="/images/twowm.png" width="230" height="230"/></i>
             <div class="in_con_con_right">
                 <h2>联系我们</h2>
                 <div>

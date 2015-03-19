@@ -8,12 +8,12 @@
                 </a>
             </li>
             <li>
-                <a {{#menus.design}}class="active"{{/menus.design}} href="/design">
+                <a {{#menus.design}}class="active"{{/menus.design}} href="/designers">
                     设计团队
                 </a>
             </li>
             <li>
-                <a {{#menus.collection}}class="active"{{/menus.collection}} href="/collection">
+                <a {{#menus.collection}}class="active"{{/menus.collection}} href="/cases">
                     案例展示
                 </a>
             </li>
@@ -43,12 +43,12 @@
         <ul>
             <li style="background:#fff1d5;">
                 <div class="m-width">
-                    <a href="javascript:void(0);"><img src="images/banner1.png" /></a>
+                    <a href="javascript:void(0);"><img src="/images/banner1.png" /></a>
                 </div>
             </li>
             <li style="background:#bfc0c2">
                 <div class="m-width">
-                    <a href="javascript:void(0);"><img src="images/banner2.png" /></a>
+                    <a href="javascript:void(0);"><img src="/images/banner2.png" /></a>
                 </div>
             </li>
         </ul>
