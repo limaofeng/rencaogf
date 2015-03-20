@@ -215,9 +215,13 @@
             <div class="in_con_con_right">
                 <h2>联系我们</h2>
                 <div>
-                    <p>地址：<span>上海市徐汇区田林路140号越界创意园区</span></p>
-                    <p>电话：<span>021-59265555</span></p>
+                    <p>地址：<span>上海市宝山区殷高西路518号7楼</span></p>
+                    <p>电话：<span>18817614810  |   15102171118</span></p>
+                    <p>联系人：<span>赵小姐          　 |   李先生</span></p>
+                    <p>Email：<span>465445890@QQ.com</span></p>
+                    <!--
                     <p>传真：<span>021-59265555</span></p>
+                    -->
                 </div>
             </div>
             <a class="btn_top">返回顶部</a>
