@@ -65,3 +65,5 @@ crashlytics-build.properties
 web-server/WebContent/WEB-INF/index
 web-client/node_modules
 target
+#不提交 nodejs 项目
+slzxw
