@@ -3,6 +3,7 @@ package com.fantasy.cms.service;
 import com.fantasy.attr.storage.service.AttributeTypeService;
 import com.fantasy.attr.storage.service.AttributeVersionService;
 import com.fantasy.cms.bean.Article;
+import com.fantasy.cms.bean.ArticleCategory;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.junit.After;
@@ -27,18 +28,22 @@ public class CmsServiceTest {
     private AttributeVersionService attributeVersionService;
 
     @Before
-    public void setUp() throws Exception{
-
+    public void setUp() throws Exception {
     }
 
     @After
     public void tearDown() throws Exception {
-        attributeVersionService.save(Article.class.getName(),"");
+
     }
 
     @Test
-    public void initAttributes(){
+    public void initAttributes() {
+        //初始化 设计师
+        ArticleCategory category = cmsService.get("designer");
 
+//        AttributeUtils.
+
+        attributeVersionService.save(Article.class.getName(), "designer");
     }
 
 }
