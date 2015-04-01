@@ -42,7 +42,7 @@ hs_err_pid*
 # Mongo Explorer plugin:
 # .idea/mongoSettings.xml
 
-## File-based project format:
+## File-based project format:cd
 *.ipr
 *.iws
 
@@ -66,5 +66,5 @@ web-server/WebContent/WEB-INF/index
 web-client/node_modules
 target
 #不提交 nodejs 项目
-slzxw
+snzxw
 jslib
