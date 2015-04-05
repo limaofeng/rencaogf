@@ -1,9 +1,13 @@
 package com.fantasy.cms.service;
 
+import com.fantasy.attr.framework.converter.FileDetailTypeConverter;
+import com.fantasy.attr.framework.util.AttributeUtils;
+import com.fantasy.attr.storage.bean.AttributeVersion;
 import com.fantasy.attr.storage.service.AttributeTypeService;
 import com.fantasy.attr.storage.service.AttributeVersionService;
 import com.fantasy.cms.bean.Article;
 import com.fantasy.cms.bean.ArticleCategory;
+import com.fantasy.file.bean.FileDetail;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.junit.After;
@@ -39,11 +43,13 @@ public class CmsServiceTest {
     @Test
     public void initAttributes() {
         //初始化 设计师
-        ArticleCategory category = cmsService.get("designer");
+        attributeTypeService.save(FileDetail.class,"图片","图片", FileDetailTypeConverter.class);
+        //初始化装修公司
+        AttributeVersion version = attributeVersionService.save(Article.class.getName(), "company", AttributeUtils.bean("logo", "公司logo", "公司logo", FileDetail.class));
+        ArticleCategory category = cmsService.get("company");
+        category.setArticleVersion(version);
+        cmsService.save(category);
 
-//        AttributeUtils.
-
-        attributeVersionService.save(Article.class.getName(), "designer");
     }
 
 }
