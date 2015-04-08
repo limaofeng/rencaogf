@@ -49,7 +49,14 @@ public class CmsServiceTest {
         ArticleCategory category = cmsService.get("company");
         category.setArticleVersion(version);
         cmsService.save(category);
+    }
 
+    //初始化 案例
+    @Test
+    public void initCase(){
+        attributeTypeService.save(FileDetail[].class,"图片","图片", FileDetailTypeConverter.class);
+        //初始化装修公司
+        attributeVersionService.save(Article.class.getName(), "case",AttributeUtils.string("square","面积",""),AttributeUtils.string("style","风格",""), AttributeUtils.string("designer","设计师",""),AttributeUtils.bean("images", "案例图片", "案例图片", FileDetail[].class));
     }
 
 }
