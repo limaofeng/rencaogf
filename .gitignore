@@ -68,3 +68,5 @@ target
 #不提交 nodejs 项目
 snzxw
 jslib
+web-server/resources/rebel.xml
+web-server/resources/rebel-remote.xml
