@@ -42,20 +42,6 @@
             });
         });
 
-        var deleteIssue = $('.batchIssue').batchExecute($("#allChecked"),$grid.data('grid').pager(),'id','确认要发布文章[{title}]？',function(){
-            $.msgbox({
-                msg : "发布成功!",
-                type : "success"
-            });
-        });
-
-        var deletenoIssue = $('.batchnoIssue').batchExecute($("#allChecked"),$grid.data('grid').pager(),'id','确认要关闭文章[{title}]？',function(){
-            $.msgbox({
-                msg : "关闭成功!",
-                type : "success"
-            });
-        });
-
         $('.dd-add').click(function(){
             if (categoryTree.getSelectedNodes().length == 0) {
                 $.msgbox({
@@ -74,42 +60,6 @@
                 $(this).attr('href', $(this).data('href') + '?categoryCode=' + categoryCode);
             }
 
-        });
-
-        $("#batchMove").click(function(){
-            moveCategoryTree.setJSON(categoryTree.getNodes());
-            $( "#basic-dialog" ).dialog({
-                modal: !0,
-                dialogClass: "modal-dialog",
-                overlayClass: "bg-white opacity-60",
-                buttons: [
-                    {
-                        text: "确定",
-                        click: function() {
-                            if (moveCategoryTree.getSelectedNodes().length == 0) {
-                                $.msgbox({
-                                    msg: "请先选择一个分类",
-                                    type: "warning"
-                                });
-                                return  false;
-                            }
-                            var selectNode = moveCategoryTree.getSelectedNodes();
-                            var categoryCode = selectNode[0].code;
-                            var ids = $('.id[type="checkbox"]:checked').vals();
-                            $.post('${request.contextPath}/cms/article/move.do',{ids:ids,categoryCode:categoryCode},function(){
-                                top.$.msgbox({
-                                    msg : "移动成功",
-                                    type : "success",
-                                    callback:function(){
-                                        $('#pager').pager().reload();
-                                    }
-                                });
-                            });
-                            $( this ).dialog( "close" );
-                        }
-                    }
-                ]
-            });
         });
 
     });
@@ -137,6 +87,7 @@
         <@s.text name='operation.remove.batch' />
         </span>
     </a>
+    <#--
     <a class="btn small primary-bg batchIssue " title="<@s.text name='operation.issue.batch' />"  href="<@s.url namespace="/cms/article" action="article_issue"/>">
         <span class="button-content">
             <i class="glyph-icon icon-rss float-left"></i>
@@ -155,12 +106,13 @@
         <@s.text name='operation.move.batch' />
         </span>
     </a>
+    -->
 </div>
 <table id="view" class="table table-hover mrg5B text-center">
-    <thead>
-    <tr>
-        <th class="pad15L" style="width:20px;">
-            <input id="allChecked" class="custom-checkbox bg-white" checkAll=".id" type="checkbox" <#--checktip="{message:'您选中了{num}条记录',tip:'#config_check_info'}"--> />
+<thead>
+<tr>
+    <th class="pad15L" style="width:20px;">
+        <input id="allChecked" class="custom-checkbox bg-white" checkAll=".id" type="checkbox" <#--checktip="{message:'您选中了{num}条记录',tip:'#config_check_info'}"--> />
         </th>
         <th>装修公司名称</th>
         <th class="sort" orderBy="issue">装修公司网址</th>

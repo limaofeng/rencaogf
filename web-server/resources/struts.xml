@@ -13,4 +13,10 @@
 	<constant name="struts.action.extension" value="do,," />
 	<constant name="struts.enable.SlashesInActionNames" value="true"/>
 
+	<package name="cms-router" extends="fantasy-default" namespace="/cms/article">
+		<action name="route" class="com.fantasy.cms.web.RouteAction">
+			<result type="freemarker">/template/%{pageTheme}/cms/article_route.ftl</result>
+		</action>
+	</package>
+
 </struts>

@@ -1,7 +1,6 @@
 <#assign s=JspTaglibs["/WEB-INF/tlds/struts-tags.tld"]/>
 <script type="text/javascript">
     $(function(){
-        $('#page-title h3').html('案例维护');
         var $advsearch = $('.propertyFilter').advsearch({
             filters : [{
                 name : 'S_title',
@@ -58,10 +57,10 @@
 <div id="searchFormPanel" class="button-panel pad5A">
 <@s.form id="searchForm" namespace="/cms/article" action="search" method="post">
     <@s.hidden name="EQS_category.code" value="%{category.code}"/>
-    <a title="添加案例" class="btn medium primary-bg dd-add" href="<@s.url namespace="/cms/article" action="article_add"/>" target="after:closest('#page-content')">
+    <a title="<@s.text name='operation.add.article' />" class="btn medium primary-bg dd-add" href="<@s.url namespace="/cms/article" action="article_add"/>" target="after:closest('#page-content')">
         <span class="button-content">
             <i class="glyph-icon icon-plus float-left"></i>
-            添加案例
+            添加设计师
         </span>
     </a>
     <div class="propertyFilter"></div>
@@ -78,36 +77,35 @@
         <@s.text name='operation.remove.batch' />
         </span>
     </a>
-<#--
-<a class="btn small primary-bg batchIssue " title="<@s.text name='operation.issue.batch' />"  href="<@s.url namespace="/cms/article" action="article_issue"/>">
-    <span class="button-content">
-        <i class="glyph-icon icon-rss float-left"></i>
-    <@s.text name='operation.issue.batch' />
-    </span>
-</a>
-<a class="btn small primary-bg batchnoIssue" title="<@s.text name='operation.unissue.batch' />"  href="<@s.url namespace="/cms/article" action="article_colse"/>">
-    <span class="button-content">
-        <i class="glyph-icon icon-ban-circle float-left"></i>
-    <@s.text name='operation.unissue.batch' />
-    </span>
-</a>
-<a href="javascript:void(0)" class="small primary-bg btn " title="<@s.text name='operation.move.batch' />" id="batchMove">
-    <span class="button-content">
-        <i class="glyph-icon icon-move float-left"></i>
-    <@s.text name='operation.move.batch' />
-    </span>
-</a>
--->
+    <#--
+    <a class="btn small primary-bg batchIssue " title="<@s.text name='operation.issue.batch' />"  href="<@s.url namespace="/cms/article" action="article_issue"/>">
+        <span class="button-content">
+            <i class="glyph-icon icon-rss float-left"></i>
+        <@s.text name='operation.issue.batch' />
+        </span>
+    </a>
+    <a class="btn small primary-bg batchnoIssue" title="<@s.text name='operation.unissue.batch' />"  href="<@s.url namespace="/cms/article" action="article_colse"/>">
+        <span class="button-content">
+            <i class="glyph-icon icon-ban-circle float-left"></i>
+        <@s.text name='operation.unissue.batch' />
+        </span>
+    </a>
+    <a href="javascript:void(0)" class="small primary-bg btn " title="<@s.text name='operation.move.batch' />" id="batchMove">
+        <span class="button-content">
+            <i class="glyph-icon icon-move float-left"></i>
+        <@s.text name='operation.move.batch' />
+        </span>
+    </a>
+    -->
 </div>
 <table id="view" class="table table-hover mrg5B text-center">
-<thead>
-<tr>
-    <th class="pad15L" style="width:20px;">
-        <input id="allChecked" class="custom-checkbox bg-white" checkAll=".id" type="checkbox" <#--checktip="{message:'您选中了{num}条记录',tip:'#config_check_info'}"--> />
+    <thead>
+    <tr>
+        <th class="pad15L" style="width:20px;">
+            <input id="allChecked" class="custom-checkbox bg-white" checkAll=".id" type="checkbox" <#--checktip="{message:'您选中了{num}条记录',tip:'#config_check_info'}"--> />
         </th>
-        <th>案例名称</th>
-        <th class="sort" orderBy="issue">风格</th>
-        <th class="sort" orderBy="releaseDate">面积</th>
+        <th class="sort" orderBy="name">名称</th>
+        <th class="sort" orderBy="summary">职位</th>
         <th class="text-center"><@s.text name='operation' /></th>
     </tr>
     </thead>
@@ -115,8 +113,7 @@
     <tr class="template" name="default">
         <td class="pad5R"><input class="id custom-checkbox" type="checkbox" value="{id}"/></td>
         <td class="font-bold pad5L">{title} </td>
-        <td>{style}</td>
-        <td>{square}</td>
+        <td>{summary}</td>
         <td class="pad0T pad0B text-center">
             <div class="dropdown actions">
                 <a href="javascript:;" title="" class="btn medium hover-black" data-toggle="dropdown">
