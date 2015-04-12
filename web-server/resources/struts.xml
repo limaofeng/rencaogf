@@ -19,4 +19,25 @@
 		</action>
 	</package>
 
+	<package name="website" extends="fantasy-default" namespace="/website">
+		<action name="contactuses" class="com.fantasy.website.web.ContactUsAction">
+			<result type="json"/>
+		</action>
+	</package>
+
+	<package name="website-contactUs" extends="fantasy-default" namespace="/website/contactus">
+		<action name="index" class="com.fantasy.website.web.ContactUsAction" method="index">
+			<result type="freemarker">/template/%{pageTheme}/website/contactus.ftl</result>
+		</action>
+		<action name="search" class="com.fantasy.website.web.ContactUsAction" method="search">
+			<result type="json"/>
+		</action>
+		<action name="view" class="com.fantasy.website.web.ContactUsAction" method="view">
+			<result type="freemarker">/template/%{pageTheme}/website/contactus_view.ftl</result>
+		</action>
+		<action name="edit" class="com.fantasy.website.web.ContactUsAction">
+			<result type="freemarker">/template/%{pageTheme}/website/contactus_edit.ftl</result>
+		</action>
+	</package>
+
 </struts>

@@ -43,7 +43,7 @@ public class CmsServiceTest {
     @Test
     public void initAttributes() {
         //初始化 设计师
-        attributeTypeService.save(FileDetail.class,"图片","图片", FileDetailTypeConverter.class);
+        attributeTypeService.save(FileDetail.class, "图片", "图片", FileDetailTypeConverter.class);
         //初始化装修公司
         AttributeVersion version = attributeVersionService.save(Article.class.getName(), "company", AttributeUtils.bean("logo", "公司logo", "公司logo", FileDetail.class));
         ArticleCategory category = cmsService.get("company");
@@ -53,19 +53,19 @@ public class CmsServiceTest {
 
     //初始化设计师
     @Test
-    public void initDesigner(){
+    public void initDesigner() {
         //初始化 设计师
-        attributeTypeService.save(FileDetail.class,"图片","图片", FileDetailTypeConverter.class);
+        attributeTypeService.save(FileDetail.class, "图片", "图片", FileDetailTypeConverter.class);
         //初始化装修公司
         attributeVersionService.save(Article.class.getName(), "designer", AttributeUtils.bean("avatar", "用户头像", "用户头像", FileDetail.class));
     }
 
     //初始化 案例
     @Test
-    public void initCase(){
-        attributeTypeService.save(FileDetail[].class,"图片","图片", FileDetailTypeConverter.class);
+    public void initCase() {
+        attributeTypeService.save(FileDetail[].class, "图片", "图片", FileDetailTypeConverter.class);
         //初始化装修公司
-        attributeVersionService.save(Article.class.getName(), "case",AttributeUtils.string("square","面积",""),AttributeUtils.string("style","风格",""), AttributeUtils.string("designer","设计师",""),AttributeUtils.bean("images", "案例图片", "案例图片", FileDetail[].class));
+        attributeVersionService.save(Article.class.getName(), "case", AttributeUtils.string("square", "面积", ""), AttributeUtils.string("style", "风格", ""), AttributeUtils.string("designer", "设计师", ""), AttributeUtils.bean("images", "案例图片", "案例图片", FileDetail[].class));
     }
 
 }
