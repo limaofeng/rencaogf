@@ -5,7 +5,7 @@
 
     <context-param>
         <param-name>webAppRootKey</param-name>
-        <param-value>webapp.website</param-value>
+        <param-value>webapp.rencaogf</param-value>
     </context-param>
     <!-- 加载Spring配置文件 -->
     <context-param>
@@ -308,9 +308,9 @@
         <welcome-file>index.jsp</welcome-file>
     </welcome-file-list>
 
-    <resource-ref id="website-jndi">
+    <resource-ref id="rencaogf-jndi">
         <description>datasource</description>
-        <res-ref-name>website</res-ref-name>
+        <res-ref-name>rencaogf</res-ref-name>
         <res-type>javax.sql.DataSource</res-type>
         <res-auth>Container</res-auth>
         <res-sharing-scope>Shareable</res-sharing-scope>

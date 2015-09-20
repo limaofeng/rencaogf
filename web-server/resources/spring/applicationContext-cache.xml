@@ -21,7 +21,7 @@
         <property name="hostName" value="${redis.host}"/>
         <property name="port" value="${redis.port}"/>
         <property name="timeout" value="15000"/>
-        <property name="database" value="0"/>
+        <property name="database" value="3"/>
         <property name="password" value="${redis.password}"/>
     </bean>
 
