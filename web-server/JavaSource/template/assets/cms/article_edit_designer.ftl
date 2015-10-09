@@ -54,6 +54,18 @@
                     </div>
                 </div>
             </div>
+            <div class="form-row">
+                <div class="form-label col-md-2">
+                    <label for="">
+                        工艺时长：
+                    </label>
+                </div>
+                <div class="form-input col-md-10">
+                    <div class="append-left">
+                        <@s.textfield name="time" value="%{art.time}"/>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div class="col-md-6 form-vertical">

@@ -26,7 +26,7 @@
     <div class="example-box">
     <@s.form id="saveForm" namespace="/cms/article" action="article_save" method="post" cssClass="center-margin">
         <@s.hidden name="category.code" value="%{category.code}"/>
-        <@s.hidden  name="version.number" value="%{category.articleVersion.number}"/>
+        <@s.hidden  name="version.number" value="designer"/>
         <div class="col-md-6 pad10T">
             <div class="form-row">
                 <div class="form-label col-md-2">
@@ -49,6 +49,18 @@
                 <div class="form-input col-md-10">
                     <div class="append-left">
                         <@s.textfield name="summary" id="summary" />
+                    </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-label col-md-2">
+                    <label for="">
+                        工艺时长：
+                    </label>
+                </div>
+                <div class="form-input col-md-10">
+                    <div class="append-left">
+                        <@s.textfield name="time"/>
                     </div>
                 </div>
             </div>

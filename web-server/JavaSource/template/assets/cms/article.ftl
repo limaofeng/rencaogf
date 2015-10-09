@@ -1,6 +1,6 @@
 <#assign s=JspTaglibs["/WEB-INF/tlds/struts-tags.tld"]/>
 <@override name="pageTitle">
-    <@s.text name="cms.article.pageTitle"/>
+
 </@override>
 <@override name="head">
 <script type="text/javascript">

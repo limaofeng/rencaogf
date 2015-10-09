@@ -57,7 +57,7 @@ public class CmsServiceTest {
         //初始化 设计师
         attributeTypeService.save(FileDetail.class, "图片", "图片", FileDetailTypeConverter.class);
         //初始化装修公司
-        attributeVersionService.save(Article.class.getName(), "designer", AttributeUtils.bean("avatar", "用户头像", "用户头像", FileDetail.class));
+        attributeVersionService.save(Article.class.getName(), "designer", AttributeUtils.bean("avatar", "用户头像", "用户头像", FileDetail.class),AttributeUtils.string("time","工艺时长","工艺时长"));
     }
 
     //初始化 案例
