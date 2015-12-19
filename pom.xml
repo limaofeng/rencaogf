@@ -17,7 +17,7 @@
         <repository>
             <id>central</id>
             <name>jfantasy maven central</name>
-            <url>http://maven.jfantasy.org/content/groups/public/</url>
+            <url>http://maven.hoolue.com/content/groups/public/</url>
         </repository>
     </repositories>
 
