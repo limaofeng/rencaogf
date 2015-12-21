@@ -57,7 +57,7 @@ public class CmsServiceTest {
         //初始化 设计师
         attributeTypeService.save(FileDetail.class, "图片", "图片", FileDetailTypeConverter.class);
         //初始化装修公司
-        attributeVersionService.save(Article.class.getName(), "designer", AttributeUtils.bean("avatar", "用户头像", "用户头像", FileDetail.class),AttributeUtils.string("time","工艺时长","工艺时长"));
+        attributeVersionService.save(Article.class.getName(), "designer", AttributeUtils.bean("avatar", "用户头像", "用户头像", FileDetail.class), AttributeUtils.string("time", "工艺时长", "工艺时长"));
     }
 
     //初始化 案例
@@ -66,6 +66,14 @@ public class CmsServiceTest {
         attributeTypeService.save(FileDetail[].class, "图片", "图片", FileDetailTypeConverter.class);
         //初始化装修公司
         attributeVersionService.save(Article.class.getName(), "case", AttributeUtils.string("square", "面积", ""), AttributeUtils.string("style", "风格", ""), AttributeUtils.string("designer", "设计师", ""), AttributeUtils.bean("images", "案例图片", "案例图片", FileDetail[].class));
+    }
+
+    //初始化 案例
+    @Test
+    public void initNews() {
+        attributeTypeService.save(FileDetail[].class, "图片", "图片", FileDetailTypeConverter.class);
+        //初始化装修公司
+        attributeVersionService.save(Article.class.getName(), "news", AttributeUtils.bean("images", "新闻图片", "新闻图片", FileDetail[].class));
     }
 
 }
