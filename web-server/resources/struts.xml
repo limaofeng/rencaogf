@@ -40,4 +40,8 @@
 		</action>
 	</package>
 
+	<package name="ckeditor" extends="fantasy-default" namespace="/ckeditor">
+		<action name="upload" class="com.fantasy.file.web.CkeditorImageAction" method="upload"/>
+	</package>
+
 </struts>

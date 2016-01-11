@@ -1,14 +1,14 @@
 <#assign s=JspTaglibs["/WEB-INF/tlds/struts-tags.tld"]/>
 <script type="text/javascript">
     $(function () {
-        var image = <@s.property value="@com.fantasy.framework.util.jackson.JSON@serialize(art.articleImage)" escapeHtml="false" default="[]"/>;
-        var imageUploader = $('#imageUploader').upload({data:{'dir':'cms_image'},theme:'image',size:'160x160'},[image]);
+        var image = <@s.property value="@com.fantasy.framework.util.jackson.JSON@serialize(art.images)" escapeHtml="false" default="[]"/>;
+        var imageUploader = $('#imageUploader').upload({data:{'dir':'cms_image'},theme:'image',size:'160x160'},image);
         $("#saveForm").ajaxForm({
             beforeSerialize : function(zhis, options){
                 var _data = {};
                 var _images = imageUploader.getData();
                 if(_images.length > 0){
-                    _data['articleImage'] = _images[0].fileManagerId + ':' + _images[0].absolutePath;
+                    _data['images'] = _images[0].fileManagerId + ':' + _images[0].absolutePath;
                 }
                 options.data = _data;
             },

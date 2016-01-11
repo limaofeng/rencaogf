@@ -7,7 +7,7 @@
                 var _data = {};
                 var _images = imageUploader.getData();
                 if(_images.length > 0){
-                    _data['articleImage'] = _images[0].fileManagerId + ':' + _images[0].absolutePath;
+                    _data['images'] = _images[0].fileManagerId + ':' + _images[0].absolutePath;
                 }
                 options.data = _data;
             },
